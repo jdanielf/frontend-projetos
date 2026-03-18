@@ -80,6 +80,39 @@
             border-radius: 8px;
         }
 
+         table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #0a3d62;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #d6eaf8;
+  }
+
+  .titulo-tabela {
+    background-color: #0a3d62;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
         aside{
             background-color: #dff0ff;
             padding: 20px;
@@ -92,6 +125,24 @@
             text-align: center;
             padding: 20px;
         }
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -160,6 +211,68 @@
                     tornando o ensino mais eficiente e próximo da realidade profissional."
                 </p>
             </article>
+        </section>
+
+
+        <section>
+            
+            <table>
+
+    <thead> 
+  <tr>
+    <th colspan="4" class="titulo-tabela">
+      Grade de Disciplinas - Inova Tech
+    </th>
+  </tr>
+
+  
+    <tr>
+      <th>Disciplina</th>
+      <th>Carga Horária</th>
+      <th>Resumo</th>
+      <th>Conteúdos</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>HTML e CSS</td>
+      <td>40h</td>
+      <td>Introdução à criação de páginas web.</td>
+      <td>Tags, formulários, layout, responsividade</td>
+    </tr>
+
+    <tr>
+      <td>JavaScript</td>
+      <td>60h</td>
+      <td>Lógica e interatividade em páginas web.</td>
+      <td>Variáveis, funções, eventos, DOM</td>
+    </tr>
+
+    <tr>
+      <td>Banco de Dados</td>
+      <td>50h</td>
+      <td>Armazenamento e manipulação de dados.</td>
+      <td>SQL, tabelas, consultas, relacionamentos</td>
+    </tr>
+
+    <tr>
+      <td>Lógica de Programação</td>
+      <td>30h</td>
+      <td>Base para desenvolvimento de sistemas.</td>
+      <td>Algoritmos, fluxogramas, estruturas</td>
+    </tr>
+
+    <tr>
+      <td>Programação Web</td>
+      <td>70h</td>
+      <td>Desenvolvimento de aplicações web completas.</td>
+      <td>Frontend, backend, integração</td>
+    </tr>
+  </tbody>
+
+</table>
+
         </section>
 
         <aside>
