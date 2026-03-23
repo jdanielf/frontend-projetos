@@ -8,11 +8,21 @@
         header{
             text-align: center;
             background-color: #ffffff;
-            padding: 20px;
-        }
+            padding: 1px;
+
+             position: fixed;  
+    top: 0;          
+    left: 0;
+    width: 100%;     
+    z-index: 1000;    
+  
+}
+        
 
         header img{
-            width: 500px;
+            width: 300px;
+            
+            
         }
 
         header h1{
@@ -25,6 +35,12 @@
             background-color: #0a3d62;
             text-align: center;
             padding: 15px;
+
+             position: fixed;
+    top: 100px; 
+    width: 100%;
+    z-index: 999;
+    margin-top: 167px;
         }
 
         nav a{
@@ -43,6 +59,8 @@
             width: 90%;
             margin: auto;
             padding: 20px;
+
+             margin-top:500px;
         }
 
         section{
