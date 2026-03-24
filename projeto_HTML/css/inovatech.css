@@ -96,12 +96,27 @@
             border-radius: 8px;
         }
 
-        article p::after{
-            content: "Inova TECH";
+        article .dep1::after{
+            content: "Ana Clara";
             display: block;
             text-align: right;
             color: #0a3d62;
         }
+
+        article .dep2::after{
+            content: "João Pedro";
+            display: block;
+            text-align: right;
+            color: #0a3d62;
+        }
+
+        article .dep3::after{
+            content: "Maria Eduarda";
+            display: block;
+            text-align: right;
+            color: #0a3d62;
+        }
+
 
          table {
     width: 100%;
