@@ -11,17 +11,18 @@ body{
 }
 
 header{
+    animation: aparecerTopo 1s ease-out; /* animação de entrada */
     height: 80px; /* altura do cabeçalho */
     display: flex; /* ativa flexbox */
     align-items: center; /* alinha vertical */
     justify-content: center; /* centraliza conteúdo */
     gap: 15px; /* espaço entre itens */
-    background-color: #ffffff; /* cor de fundo */
+    background-color: #145374; /* cor de fundo */
     position: fixed; /* fixa no topo */
     top: 0;
     left: 0;
     width: 100%; /* largura total */
-    z-index: 1000; /* fica acima de tudo */
+    z-index: 1000 !important; /* fica acima de tudo */
 }
 
 header img{
@@ -163,7 +164,7 @@ aside{
 }
 
 footer{
-    background-color: #0a3d62; /* cor do rodapé */
+    background-color: #082c45; /* cor do rodapé */
     color: white;
     text-align: center;
     padding: 20px;
@@ -171,11 +172,12 @@ footer{
 
 footer p{
     transition: 0.3s;
-    cursor: pointer;
+    
 }
 
 footer p:hover{
     transform: scale(1.1);
+    letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
@@ -192,5 +194,16 @@ footer p:hover{
     td {
         display: flex;
         justify-content: space-between; /* organiza conteúdo */
+    }
+};
+
+@keyframes aparecerTopo{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
