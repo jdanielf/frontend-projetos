@@ -1,82 +1,82 @@
 body{
-    margin: 0; /* remove margem padrão */
-    font-family: Arial, sans-serif; /* define fonte */
-    background-color: #f4f6f9; /* cor de fundo */
+    margin: 0; /* remove margem */
+    font-family: Arial, sans-serif; /* fonte padrão */
+    background-color: #f4f6f9; /* fundo */
     color: #333; /* cor do texto */
 }
 
 ::selection{
-    background-color: #f6b93b; /* cor ao selecionar */
-    color: #0a3d62; /* cor do texto selecionado */
+    background-color: #f6b93b; /* fundo seleção */
+    color: #0a3d62; /* texto seleção */
 }
 
 header{
-    animation: aparecerTopo 1s ease-out; /* animação de entrada */
-    height: 80px; /* altura do cabeçalho */
-    display: flex; /* ativa flexbox */
+    animation: aparecerTopo 1s ease-out; /* animação */
+    height: 80px; /* altura */
+    display: flex; /* flexbox */
     align-items: center; /* alinha vertical */
-    justify-content: center; /* centraliza conteúdo */
-    gap: 15px; /* espaço entre itens */
-    background-color: #145374; /* cor de fundo */
-    position: fixed; /* fixa no topo */
+    justify-content: center; /* centraliza */
+    gap: 15px; /* espaçamento */
+    background-color: #145374; /* cor */
+    position: fixed; /* fixa topo */
     top: 0;
     left: 0;
     width: 100%; /* largura total */
-    z-index: 1000 !important; /* fica acima de tudo */
+    z-index: 1000 !important; /* prioridade */
 }
 
 header img{
-    width: 200px; /* tamanho da imagem */
+    width: 200px; /* tamanho logo */
 }
 
 header h1{
-    margin-top: 0; /* remove espaço acima */
-    font-size: 18px; /* tamanho do texto */
-    color: #0a3d62; /* cor do título */
+    margin-top: 0; /* remove espaço */
+    font-size: 18px; /* tamanho texto */
+    color: #0a3d62; /* cor título */
 }
 
 nav{
-    background-color: #0a3d62; /* cor do menu */
-    text-align: center; /* centraliza links */
+    background-color: #0a3d62; /* fundo menu */
+    text-align: center; /* centraliza */
     padding: 10px; /* espaço interno */
-    position: fixed; /* fixa abaixo do header */
-    top: 80px; /* posição abaixo do header */
+    position: fixed; /* fixa menu */
+    top: 80px; /* abaixo header */
     width: 100%;
-    z-index: 999;
+    z-index: 999; /* camada */
 }
 
 nav a{
-    color: white; /* cor do link */
-    text-decoration: none; /* remove sublinhado */
-    margin: 0 20px; /* espaço entre links */
-    font-size: 18px;
-    font-weight: bold;
+    color: white; /* cor links */
+    text-decoration: none; /* remove linha */
+    margin: 0 20px; /* espaçamento */
+    font-size: 18px; /* tamanho */
+    font-weight: bold; /* negrito */
 }
 
 nav a:hover{
-    color: #f6b93b; /* cor ao passar o mouse */
+    color: #f6b93b; /* hover */
 }
 
 nav a:visited{
-    color: #3409f3; /* cor após visitar */
+    color: #3409f3; /* visitado */
 }
 
 main{
-    width: 90%; /* largura do conteúdo */
+    width: 90%; /* largura */
     margin: auto; /* centraliza */
-    padding: 20px; /* espaço interno */
-    margin-top:140px; /* espaço do topo (header + nav) */
+    padding: 20px; /* espaço */
+    margin-top:140px; /* espaço topo */
 }
 
 section{
-    background-color: white; /* fundo branco */
-    margin-bottom: 20px; /* espaço entre seções */
+    background-color: white; /* fundo */
+    margin-bottom: 20px; /* espaço */
     padding: 20px; /* espaço interno */
-    border-radius: 10px; /* borda arredondada */
+    border-radius: 10px; /* borda */
 }
 
 section h2{
-    color: #0a3d62; /* cor do título */
+    color: #0a3d62; /* cor título */
     text-align: center; /* centraliza */
 }
 
@@ -84,29 +84,29 @@ video, iframe{
     display: block; /* quebra linha */
     margin: 20px auto; /* centraliza */
     max-width: 100%; /* responsivo */
-    border-radius: 10px;
+    border-radius: 10px; /* borda */
 }
 
 article{
-    background-color: #eef3f8; /* fundo do depoimento */
-    padding: 15px;
-    margin: 15px 0;
-    border-left: 5px solid #0a3d62; /* barra lateral */
-    border-radius: 8px;
+    background-color: #eef3f8; /* fundo */
+    padding: 15px; /* espaço */
+    margin: 15px 0; /* margem */
+    border-left: 5px solid #0a3d62; /* lateral */
+    border-radius: 8px; /* borda */
     transition: all 0.3s ease; /* animação */
 }
 
 article:hover{
-    transform: scale(1.03); /* aumenta levemente */
-    background-color:  #d6eaf8; /* muda cor */
+    transform: scale(1.03); /* aumenta */
+    background-color:  #d6eaf8; /* cor hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* sombra */
-    cursor: pointer; /* muda cursor */
+    cursor: pointer; /* cursor */
 }
 
 article .dep1::after{
     content: "Ana Clara"; /* autor */
     display: block;
-    text-align: right;
+    text-align: right; /* direita */
     color: #0a3d62;
 }
 
@@ -125,10 +125,10 @@ article .dep3::after{
 }
 
 table {
-    width: 100%; /* largura total */
+    width: 100%; /* largura */
     border-collapse: collapse; /* junta bordas */
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+    margin-top: 20px; /* espaço */
+    font-family: Arial, sans-serif; /* fonte */
 }
 
 th, td {
@@ -138,72 +138,71 @@ th, td {
 }
 
 th {
-    background-color: #0a3d62; /* cor do cabeçalho */
+    background-color: #0a3d62; /* cabeçalho */
     color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* linhas alternadas */
+    background-color: #f2f2f2; /* linhas */
 }
 
 tr:hover {
-    background-color: #d6eaf8; /* destaque ao passar mouse */
+    background-color: #d6eaf8; /* hover */
 }
 
 .titulo-tabela {
-    background-color: #0a3d62;
+    background-color: #0a3d62; /* título */
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 20px; /* tamanho */
+    font-weight: bold; /* negrito */
 }
 
 aside{
-    background-color: #dff0ff; /* cor lateral */
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #dff0ff; /* lateral */
+    padding: 20px; /* espaço */
+    border-radius: 10px; /* borda */
 }
 
 footer{
-    background-color: #082c45; /* cor do rodapé */
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: #082c45; /* rodapé */
+    color: white; /* texto */
+    text-align: center; /* centraliza */
+    padding: 20px; /* espaço */
 }
 
 footer p{
-    transition: 0.3s;
-    
+    transition: 0.3s; /* animação */
 }
 
 footer p:hover{
-    transform: scale(1.1);
-    letter-spacing: 1px;
+    transform: scale(1.1); /* aumenta */
+    letter-spacing: 1px; /* espaça letras */
 }
 
 @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
-        display: block; /* transforma tabela em bloco */
+        display: block; /* responsivo */
     }
 
     tr {
-        margin-bottom: 15px;
+        margin-bottom: 15px; /* espaço */
         border: 1px solid #ccc;
         padding: 10px;
     }
 
     td {
         display: flex;
-        justify-content: space-between; /* organiza conteúdo */
+        justify-content: space-between; /* organiza */
     }
-};
+}
 
 @keyframes aparecerTopo{
     from{
-        opacity: 0;
-        transform: translateY(-50px);
+        opacity: 0; /* invisível */
+        transform: translateY(-50px); /* sobe */
     }
     to{
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* visível */
+        transform: translateY(0); /* posição */
     }
 }
