@@ -169,6 +169,15 @@ footer{
     padding: 20px;
 }
 
+footer p{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer p:hover{
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
         display: block; /* transforma tabela em bloco */
