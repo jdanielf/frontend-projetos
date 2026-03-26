@@ -1,8 +1,8 @@
 body{
     margin: 0; /* remove margem */
-    font-family: Arial, sans-serif; /* fonte padrão */
+    font-family: Arial, sans-serif; /* fonte */
     background-color: #f4f6f9; /* fundo */
-    color: #333; /* cor do texto */
+    color: #333; /* texto */
 }
 
 ::selection{
@@ -16,41 +16,41 @@ header{
     display: flex; /* flexbox */
     align-items: center; /* alinha vertical */
     justify-content: center; /* centraliza */
-    gap: 15px; /* espaçamento */
-    background-color: #145374; /* cor */
+    gap: 15px; /* espaço */
+    background-color: #145374; /* fundo */
     color: white; /* texto */
     position: fixed; /* fixa topo */
     top: 0;
     left: 0;
-    width: 100%; /* largura total */
+    width: 100%; /* largura */
     z-index: 1000 !important; /* prioridade */
 }
 
 header img{
-    width: 200px; /* tamanho logo */
-    filter: drop-shadow(0 2px 6px rgba(255,255,255,0.8)) brightness(1.1); /* sombra e brilho */
+    width: 200px; /* logo */
+    filter: drop-shadow(0 2px 6px rgba(255,255,255,0.8)) brightness(1.1); /* efeito */
 }
 
 header h1{
-    margin-top: 0; /* remove espaço */
-    font-size: 18px; /* tamanho texto */
-    color: white   /* cor título */
+    margin-top: 0; /* remove margem */
+    font-size: 18px; /* tamanho */
+    color: white; /* cor */
 }
 
 nav{
     background-color: #0a3d62; /* fundo menu */
     text-align: center; /* centraliza */
-    padding: 10px; /* espaço interno */
-    position: fixed; /* fixa menu */
+    padding: 10px; /* espaço */
+    position: fixed; /* fixa */
     top: 80px; /* abaixo header */
-    width: 100%;
+    width: 100%; /* largura */
     z-index: 999; /* camada */
 }
 
 nav a{
-    color: white; /* cor links */
+    color: white; /* links */
     text-decoration: none; /* remove linha */
-    margin: 0 20px; /* espaçamento */
+    margin: 0 20px; /* espaço */
     font-size: 18px; /* tamanho */
     font-weight: bold; /* negrito */
 }
@@ -73,17 +73,17 @@ main{
 section{
     background-color: white; /* fundo */
     margin-bottom: 20px; /* espaço */
-    padding: 20px; /* espaço interno */
+    padding: 20px; /* interno */
     border-radius: 10px; /* borda */
 }
 
 section h2{
-    color: #0a3d62; /* cor título */
+    color: #0a3d62; /* título */
     text-align: center; /* centraliza */
 }
 
 video, iframe{
-    display: block; /* quebra linha */
+    display: block; /* bloco */
     margin: 20px auto; /* centraliza */
     max-width: 100%; /* responsivo */
     border-radius: 10px; /* borda */
@@ -100,7 +100,7 @@ article{
 
 article:hover{
     transform: scale(1.03); /* aumenta */
-    background-color:  #d6eaf8; /* cor hover */
+    background-color:  #d6eaf8; /* hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* sombra */
     cursor: pointer; /* cursor */
 }
@@ -145,7 +145,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* linhas */
+    background-color: #f2f2f2; /* linhas pares */
 }
 
 tr:hover {
