@@ -18,6 +18,7 @@ header{
     justify-content: center; /* centraliza */
     gap: 15px; /* espaçamento */
     background-color: #145374; /* cor */
+    color: white; /* texto */
     position: fixed; /* fixa topo */
     top: 0;
     left: 0;
@@ -27,12 +28,13 @@ header{
 
 header img{
     width: 200px; /* tamanho logo */
+    filter: drop-shadow(0 2px 6px rgba(255,255,255,0.8)) brightness(1.1); /* sombra e brilho */
 }
 
 header h1{
     margin-top: 0; /* remove espaço */
     font-size: 18px; /* tamanho texto */
-    color: #0a3d62; /* cor título */
+    color: white   /* cor título */
 }
 
 nav{
